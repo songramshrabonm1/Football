@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* **************font-style-added******************* */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* **************font-style-ended******************* */
+
+/* ****************************HEADER STYLE START************************ */
+
+.full-header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 106px;
+    padding-right: 24px;
+    width: 95%;
+    height: 50%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.header-title{
+    width: 50%; 
+}
+.header-img{
+    width: 50%;
+}
+.header-title h1{
+    font-size: 70px;
+}
+.header-title p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.header-img img{
+    width: 90%;
+    transition: transform 3s ease-in-out ;
+}
+.full-header:hover>.header-img>img{
+    transform: skewY(15deg);
+}
+.btn{
+    background-color: red;
+    border: 1px solid red;
+    padding: 16px 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 124px;
+    transition: transform 1s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background-color: blue;
+    border: none;
+    margin-bottom: 125px;
+    padding: 16px 25px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* **************************HEADER STYLE END******************* */
+
+/* *************Class information style **************************** */
+.information{
+    margin-top: 117px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* *************Class information style **************************** */
+
+/* *****************Nav style start ********************** */
+.navs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav{
+    width: 100%;
+    height: 64px;
+    border: 1px solid;
+    background-color: white;
+    border-radius: 10px;
+    top: 20px;
+    margin-bottom: 20px;
+}
+
+#special{
+    background-color: red;
+}
+.nav>li{
+    list-style: none;
+    text-align: center;
+    /* width: 10%; */
+    margin: 15px 0px;
+    
+}
+.nav{
+    transition: transform 1s ease-in-out;
+}
+.nav:hover{
+    transform: scale(.85);
+    background-color: red;
+}
+#special:hover{
+    transform: scale(.85);
+    background-color: blue;
+}
+.nav>li>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.831);
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+}
+.navigation{
+    padding: 20px; 
+    background-color: black;
+    width: 162px;
+    height: 312px;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+/* ******************Nav style end *********************** */
+/* *******************LIVE CARDS STYLE START************************ */
+
+.live-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+}
+.live-card{
+    width: 312px;
+    height: 362px;
+    border: 1px solid gray;
+    border-radius: 9px;
+    transition: transform 2s ease-in-out;
+}
+.live-card:hover{
+    transform: scale(.95);
+    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.312);
+}
+.title{
+    padding: 20px;
+}
+.title h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.img-part{
+    width: 100%;
+}
+.img-part img{
+    width: 100%;
+}
+.icon{
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    color: rgba(0, 0, 0, 0.406);
+}
+.click{
+    padding: 4px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.click:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+/* *******************LIVE CARDS STYLE END************************ */
+
+/* ***********footer style start ****************** */
+
+.footer-detail{
+    background-color: black;
+    width: 100%;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+}
+.info li{
+    list-style: none;
+    padding: 20px 15px;
+}
+.info li a{
+    text-decoration: none;
+    color: white;
+}
+.social>a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.social>a>i{
+    transition: transform 1s ease-in-out;
+
+}
+.social >a:hover>i{
+    transform: scale(1.8);
+}
+/* ***********footer style End ****************** */
+/* ***********media-query Start **************** */
+@media screen and (max-width:688px) {
+
+    /* *******Header part***** */
+    .full-header{
+       display: flex;
+       flex-direction: column;
+       align-content: flex-start;
+       padding: 0px;
+    }
+
+    .header-title{
+        text-align: center;
+    }
+    .header-title h1{
+        font-size: 40px;
+    }
+    .header-img{
+        width: 60%;
+        height: 100%;
+    }
+    .header-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+
+/* *******Header end ******** */
+/* *****class information start ***** */
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+          
+}   
+/* ******class information end ****** */
+/* *******class navigation start ************ */
+.navigation{
+    padding: 20px; 
+    width: 312px;
+    height: 312px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+/* *********class navigation end *************** */
+    /* ******** Live cards start ******** */
+    .live-cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 24px;
+        width: 90%;
+    }
+    .live-card{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .info{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width:689px) and (max-width:1150px) {
+    .information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .live-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 24px;
+        width: 90%;
+    }
+    .live-card{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .navs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+    }
+    .navigation{
+        padding: 20px; 
+        background-color: rgba(210, 173, 173, 0.582);
+        width: 95%;
+        height: 0%;
+        border-radius: 10px;
+        margin: 0 5px;
+    }
+
+    .info{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
+    /* *******live cards end ******** */
+
+/* ***********media-query End **************** */
+/* ************* */
